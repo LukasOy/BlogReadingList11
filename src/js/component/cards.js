@@ -6,70 +6,83 @@ import { Context } from "../store/appContext";
 export const Cards = () => {
     return ( 
        
-<div class="card-deck">
-    <div class="container">
-    <h1> Perritos </h1>
-  <div class="card"> 
-    <img class="img-thumbnail h-50" src="https://mrwanker.com/wp-content/uploads/2021/07/perrito-triste-memes-1.jpg" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Uno</h5>
-      <p class="card-text"> Perrito mirandote de lado</p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/3c19f72c818f5cb0c03f8083ff0d9b87~c5_720x720.jpeg?x-expires=1669953600&x-signature=9WjOCXZDTGl5k0%2BodZDb7nh5eiU%3D" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Dos</h5>
-      <p class="card-text">Este tambien mira de ladito</p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images//gallery/5a84260b5cafe8505a3c986b/perro-en-el-coche-asustado.jpg" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Tres </h5>
-      <p class="card-text">perrito copiloto</p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
+<div className="row">
+    <div className="container">
+    <h1> Banderas según Inteligencia Artificial </h1>
+  <div className="col-5"> 
+    <img src="https://media.biobiochile.cl/wp-content/uploads/2021/11/bandera-chile-inteligencia-artificial-1162x768.jpg" alt="Card image cap" width={400}></img>
+    <div className="card-body">
+      <h5 className="card-title">Chile</h5>
+      <p className="card-text"> Perrito chileno</p>
+      <button type="button" class="btn btn-primary">Aprende mas de Chile</button>
+      <button className="fa-solid fa-heart"></button>
     </div>
     </div>
   </div>
-  <div class="container">
-  <h1> Perritos 2.0 </h1>
-  <div class="card"> 
-    <img class="img-thumbnail" src="https://kaikucaffelatte.com/blog/wp-content/uploads/2021/10/memes-de-animales-3.png" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Chascon</h5>
-      <p class="card-text"> Perrito le falta peluquero</p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
+
+  <div className="container">
+    
+  <div className="col-5"> 
+    <img src="https://s.yimg.com/ny/api/res/1.2/W6hDpQDNZOAGzH9JNfO5JQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzNQ--/https://media.zenfs.com/es/business_insider_m_xico_941/dfc6ddec654c05f0c89fc6b4dcd40165" alt="Card image cap" width={400}></img>
+    <div className="card-body">
+      <h5 className="card-title">Argentina</h5>
+      <p className="card-text"> Hojas religion y líneas</p>
+      <button type="button" class="btn btn-primary">Aprende mas de Argentina</button>
+      <button className="fa-solid fa-heart"></button>
+    </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="https://i.pinimg.com/originals/af/b7/f7/afb7f7fec6c79aa3d76fe36158f938ff.jpg" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Feliz</h5>
-      <p class="card-text">Feliz por verte </p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
+
+  <div className="container">
+    
+  <div className="col-5"> 
+    <img src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2021/11/16154539/Business_insider_mexico_banderas_inteligencia_artificial_peru.jpg" alt="Card image cap" width={400}></img>
+    <div className="card-body">
+      <h5 className="card-title">Perú</h5>
+      <p className="card-text"> Volcan</p>
+      <button type="button" class="btn btn-primary">Aprende mas de Perú</button>
+      <button className="fa-solid fa-heart"></button>
+    </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="https://t2.ea.ltmcdn.com/es/posts/8/9/2/nombres_graciosos_para_perros_pequenos_23298_3_600.jpg" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Perrito Mas feliz  </h5>
-      <p class="card-text">Este esta mas feliz que el anterior</p>
-      <button type="button" class="btn btn-primary">Aprende mas de este perro</button>
-      <button class="fa-solid fa-heart"></button>
-    </div>
-  </div>
-  </div>
-  
+
+
 </div>
 
  
 );
 };
+export const Cards1 = (props) => {
+  return (
+    <div className="card">
+      <div className="card-header">
+
+      </div>
+     <div className="card-body">
+      <h5 className="card-title"> Título de País Aquí </h5>
+      <p className="card-text"> Info sencilla de cada país</p>
+      <Link to={props.ruta}>
+        <a className="btn btn-danger">{props.titulo}</a>
+      </Link>
+     </div>
+    </div>
+  );
+  } ;
+  export const Cards2 = ({titulo, ruta, descripcion})=>{
+  return (
+    <div className="card" style={{width: "18rem"}}>
+    <div className="card-body">
+      <div>
+        <h5 className="card-title">{titulo}</h5>
+        <p className="card-text">{descripcion} </p>
+        <div className="row">
+        <Link to={ruta}>
+      <a className="btn btn-primary"> Más info aquí</a>
+        </Link>
+        <button className="fa-solid fa-heart"></button>
+        </div>
+        </div> 
+        </div>
+        </div>
+  )
+  }

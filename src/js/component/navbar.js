@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light row-6">
       <Link to="/">
-        <a class="navbar-brand" href="#">
-          Starwars
+        <a className="navbar-brand">
+        <i className="fa-solid fa-flag"></i>
         </a>
       </Link>
       
         <Link to="/demo">
           <button
-            className="btn btn-danger"
+            className="btn btn-danger row-6"
             type="button"
                       >
-            Favoritos
+            Info Países
           </button>
         </Link>
       
