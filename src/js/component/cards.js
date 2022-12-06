@@ -54,16 +54,18 @@ export const Cards = () => {
 };
 export const Cards1 = (props) => {
   return (
-    <div className="card">
+    <div className="card" style={{width: "18rem"}}>
       <div className="card-header">
-
-      </div>
+      <img src={props.img} className="card-img-top" alt="..."/>
+      
      <div className="card-body">
-      <h5 className="card-title"> Título de País Aquí </h5>
-      <p className="card-text"> Info sencilla de cada país</p>
+      <h5 className="card-title"> {props.titulo} </h5>
+      <p className="card-text"> {props.descripcion}</p>
+      </div>
       <Link to={props.ruta}>
-        <a className="btn btn-danger">{props.titulo}</a>
+        <a className="btn btn-danger">Más Detalle </a>
       </Link>
+      <button className="fa-solid fa-heart"></button>
      </div>
     </div>
   );

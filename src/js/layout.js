@@ -31,7 +31,7 @@ const Layout = () => {
 						<Route path="/paises" element={<Paises />} />
 						<Route path="/personajes" element={<Personajes />} />
 						<Route path="/single/:theid" element={<Single />} />
-						<Route path="*" element={<h1>No hay paises aquí!</h1>} />
+						<Route path="*" element={<h1>¡Aquí no tenemos nada!</h1>}/>
 					</Routes>
 					<Footer />
 				</ScrollToTop>
