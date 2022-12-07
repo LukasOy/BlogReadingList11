@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useContex} from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import { Context } from "../store/appContext";
 
 import { Cards, Cards2, Cards1 } from "../component/cards";
 
@@ -8,7 +9,7 @@ export const Home = () => (
 
 	<div>
 		<div className="d-flex row-2">
-      <h1>Datos aleatorios de los Países</h1>
+      <h1>Los Paises</h1>
     </div>
   <div className="container text-center d-flex mt-5 p-3 m-3 row-1">
     <div className="row">
@@ -23,9 +24,9 @@ export const Home = () => (
       </div>
       <div className="col">
         <Cards1
-          titulo="Animales"
-          img="https://img.freepik.com/vector-premium/conjunto-animales-lindos-kawaii-ninos-que-aprenden-vocabulario-estilo-dibujos-animados-plana_34141-498.jpg?w=2000"
-          descripcion="Aquí lista de personajes"
+          titulo="Banderas"
+          img="https://thumbs.dreamstime.com/z/banderas-del-mundo-en-la-forma-de-esfera-49616173.jpg"
+          descripcion="Aquí lista de las banderas"
           botonName="Entrar"
           ruta="/personajes"
         />

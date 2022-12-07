@@ -2,6 +2,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			paises:[],
+			banderas:[],
+			
 			demo: [
 				{
 					title: "FIRST",
@@ -13,14 +15,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			titulo:"Paises, banderas y capitales"
 		},
 		actions: {
-				getPaises: ()=>{
-					fetch("https://restcountries.com/v2/all", requestOptions)
-  				.then(response => response.text())
- 				.then(data => console.log(data.result))
-				setStore({paises:data.result})
+				getPais: ()=>{
+					fetch("https://restcountries.com/v2/all")
+  				.then(response => response.json())
+ 				.then(data =>{ console.log(data)
+				setStore({paises:data})})
+				},
+
+				getBandera: () =>{
+					fetch("https://restcountries.com/v2/all")
+  				.then(response => response.json())
+ 				.then(data =>{ console.log(data)
+				setStore({banderas:data})})
+
 				}
 			// Use getActions to call a function within a fuction
 			//1exampleFunction: () => {

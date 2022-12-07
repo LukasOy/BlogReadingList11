@@ -54,7 +54,7 @@ export const Cards = () => {
 };
 export const Cards1 = (props) => {
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card text-white bg-dark" style={{width: "18rem"}}>
       <div className="card-header">
       <img src={props.img} className="card-img-top" alt="..."/>
       
@@ -72,7 +72,7 @@ export const Cards1 = (props) => {
   } ;
   export const Cards2 = ({titulo, ruta, descripcion})=>{
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card" style={{width: "18rem"}}> 
     <div className="card-body">
       <div>
         <h5 className="card-title">{titulo}</h5>
